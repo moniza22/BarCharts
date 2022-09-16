@@ -1,0 +1,26 @@
+---
+title: "BarCharts"
+author: "Moniza Naseem"
+date: "2022-09-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Data
+```{r}
+
+library(datasets)
+??mtcars
+head(mtcars)
+
+```
+
+```{r}
+barplot(mtcars$cyl, col = "purple")
+barplot(mtcars$wt,col = "blue")
+plot(mtcars$cyl,mtcars$wt,pch=19,col = "green") # Scatterplot because two quantitative                                                  # variables
+```
+
